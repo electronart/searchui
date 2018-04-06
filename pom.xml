@@ -19,13 +19,12 @@
   </issueManagement>
   <distributionManagement>
     <repository>
-      <id>${maven.repo.releases}</id>
-      <url>${maven.repo.url.releases}</url>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>${maven.repo.snapshots}</id>
-      <url>${maven.repo.url.snapshots}</url>
-      <uniqueVersion>false</uniqueVersion>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
   <scm>
@@ -94,15 +93,4 @@
     <module>searchui-servlet</module>
     <module>searchui-module</module>
   </modules>
-  <profiles>
-    <profile>
-      <id>attivio</id>
-      <properties>
-        <maven.repo.releases>releases</maven.repo.releases>
-        <maven.repo.snapshots>snapshots</maven.repo.snapshots>
-        <maven.repo.url.releases>http://mvn.corp.attivio.com/nexus/content/repositories/releases/</maven.repo.url.releases>
-        <maven.repo.url.snapshots>http://mvn.corp.attivio.com/nexus/content/repositories/snapshots/</maven.repo.url.snapshots>
-      </properties>
-    </profile>
-  </profiles>
 </project>
