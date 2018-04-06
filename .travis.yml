@@ -10,9 +10,9 @@ deploy:
     secure: JQKvIazVP4GBdj8PZnwpR8bpWZC4ivWFrCLAbg2W0DOaIxNPklCkre14XpGRkMPjVdsbl/EYxwEZ1wSjSGOHiP7i8G+hkv8e5eSXB7J/jl/SkTaMDbccs6kyIFeUx6W4phTH6vhYpcRuD+09dskVIanB5u1wFewQz3j7gxXNbydGJDq5Ff36RTtNQjvdoYC4BxQHtYB3T0JxYICyHfzzfN48s1HpUlTpgsphrP+f+qBwZM3roLkyTws14YJH8pNYlE9ywjRltOspOsh/+Y2XRNtQ67ecGJJnQU7ln2pz+GXBphoM7De23wsrSs+4c73Z3oNNFkv6VXVRXKlP0fTdnBdB8+9J60vHSJfaz90VEKE5UH5kv3+HGvEOi6SBZVgPBtwbuCwImAnRYz2KIEZql3rygIwUapLMB/oGfYPONZid/pJv0Hkamv7+0xLxrFZI3yHBg89ZMSgOSrjjMjqw05St/ZLu8C//FKBteKHV6mvUeAP5aivs+pr8gCTW3TCfiq8coYsshzkTuWBQesbQFaOppG/p8wSI74N88e11Q32BTstttyWT+in//ZJ2hJnlCjoAUN4Giot9H6BzZUK5wEYbS4OBesFmgQ8K02ZK1wuKYVQGBEWfV8nKbavXNEh69C6U4W+9cf6Kw6jmF8JaSsu0RpN4/uAUyYuTFRVKIok=
   file_glob: true
   file:
-    - frontend/target/*.zip
-    - module/target/*.zip
-    - servlet/target/*.war
+    - searchui-frontend/target/*.zip
+    - searchui-module/target/*.zip
+    - searchui-servlet/target/*.war
   skip_cleanup: true
   prerelease: true
   on:
